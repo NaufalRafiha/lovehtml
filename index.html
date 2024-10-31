@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Confession</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>This is my feeling</h1>
+        <button id="revealButton">Reveal</button>
+        <div id="heartContainer" class="hidden">
+            <div class="heart"></div>
+            <p class="message">I love you dikaaa!</p>
+        </div>
+    </div>
+    <div id="heartRain"></div> <!-- Hujan hati -->
+    
+    <!-- Link ke file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+    <script>
+        document.getElementById('revealButton').addEventListener('click', function() {
+            document.getElementById('heartContainer').classList.remove('hidden');
+            document.getElementById('revealButton').classList.add('hidden');  // Sembunyikan tombol setelah diklik
+        });
+    </script>
+</body>
+</html>
